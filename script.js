@@ -3,7 +3,7 @@ function calculateLove() {
   var name2 = document.getElementById("name2").value.trim().toLowerCase();
   var loveScore = 0;
 
-  if ((name1 === "aditi" && name2 === "jai") || (name1 === "jai" && name2 === "aditi")) {
+  if ((name1 === "aditi" && name2 === "jai") || (name1 === "jai" && name2 === "aditi") || (name1 === "parth" && name2 === "j")) {
     loveScore = 100;
   } else {
     for (var i = 0; i < name1.length; i++) {
