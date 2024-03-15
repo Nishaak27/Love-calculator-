@@ -1,6 +1,6 @@
 function calculateLove() {
-  var name1 = document.getElementById("name1").value.toLowerCase();
-  var name2 = document.getElementById("name2").value.toLowerCase();
+  var name1 = document.getElementById("name1").value.trim().toLowerCase();
+  var name2 = document.getElementById("name2").value.trim().toLowerCase();
   var loveScore = 0;
 
   if ((name1 === "aditi" && name2 === "jai") || (name1 === "jai" && name2 === "aditi")) {
