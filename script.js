@@ -3,10 +3,14 @@ function calculateLove() {
   var name2 = document.getElementById("name2").value.toLowerCase();
   var loveScore = 0;
 
-  for (var i = 0; i < name1.length; i++) {
-    for (var j = 0; j < name2.length; j++) {
-      if (name1[i] === name2[j]) {
-        loveScore += 10;
+  if ((name1 === "aditi" && name2 === "jai") || (name1 === "jai" && name2 === "aditi")) {
+    loveScore = 100;
+  } else {
+    for (var i = 0; i < name1.length; i++) {
+      for (var j = 0; j < name2.length; j++) {
+        if (name1[i] === name2[j]) {
+          loveScore += 10;
+        }
       }
     }
   }
